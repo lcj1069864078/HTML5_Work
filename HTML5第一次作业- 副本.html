@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/
+TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+</head>
+<body>
+<script>
+</script>
+<form>
+<fieldset>
+<legend>用户注册页</legend>
+<center>
+<div style="padding:5px;width=600px">
+	<h4>学生登录信息</h4>
+	<table width='100%'>
+		<p>
+		<tr>
+			<td width='33%'>用户名</td>
+			<td width='33%'><input id="username" type="text" required="true" pattern="^(?![^a-zA-Z]+$)(?!\D+$)[a-zA-Z0-9]{6,}$"/></td>
+			<td width='34%'><font color="red">*</font></td>
+		</tr>
+		<tr>
+			<td>电子邮箱</td>
+			<td><input id="email" type="email" required="true"/></td>
+			<td><font color="red">*</font></td>
+		</tr>
+		<tr>
+			<td>学生学号</td>
+			<td><input   id="num"   type="number"   required="true"/></td>
+			<td><font color="red">*</font> <span id="strength"></span></td>
+		</tr>
+	</table>
+	<p>
+		<td>校园网注册系统 </td>
+		
+	</p>
+</div>
+<input type="submit" value="注册新用户">
+<input type="reset" value="重置">
+</center>
+</fieldset>
+</form>
+</body>
+</html>
