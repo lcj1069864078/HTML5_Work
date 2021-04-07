@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input {
+  width: 100%;
+}
+body {
+  background-color: lightblue;
+  width:300px;
+  height:300px;
+   background-image: linear-gradient(to right, blue , pink);
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+
+
+p1 {
+  font-family: verdana;
+  font-size: 20px;
+  border:5px solid red;
+  text-shadow: 2px 2px;
+}
+p2 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: verdana;
+  font-size: 20px;
+  border:5px solid blue;
+}
+#rcorners1{
+ border-radius: 20px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 50px;
+  height: 50px; 
+
+}
+
+
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 16px 8px;
+  cursor: pointer;
+}
+#example1 {
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 20px;
+}
+div1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  {left:200px; top:-200px;}
+  75%  {left:0px; top:-200px;}
+  100% {left:0px; top:0px;}
+}
+
+div2 {
+  position: relative;
+  animation-name: example2;
+  animation-duration: 8s;
+}
+
+@keyframes example2 {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:-200px;}
+  100% {left:0px; top:0px;}
+}
+
+div3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+</style>
+</head>
+<body>
+
+<h1>标题</h1>
+
+<div id="example1">
+<div1>
+ <p1>第一段话</p1>
+ </div1>
+<p>
+
+<div2><p2>第二句话 </p2></div2>
+
+<p id="rcorners1">这是一个圆角矩形 </p>
+
+<div1>
+    <button class="button">按钮 </button>
+</div1>
+</div>
+<form>
+  <label for="fname">输入信息：</label>
+  <input type="text" id="fname" name="fname">
+</form>
+
+<div class="pagination">
+  <a href="#">«</a>
+  <a href="#">1</a>
+    <a class="active" href="#">2</a>
+  <a href="#">3</a>
+
+  <a href="#">»</a>
+</div>
+
+
+
+
+
+</body>
+</html>
